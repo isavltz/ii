@@ -1,0 +1,296 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+body {
+  height: 100vh;
+  margin:0;
+  background-image: url('/images/achtergrond-ii.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+button:not([disabled]) {
+  cursor:pointer;
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  --color-heading: lime;
+  --color-text: lime;
+  --color-title: white;
+}
+
+
+
+
+
+/********************/
+/* ALGEMENE TEKST STYLING */
+/********************/
+h1 {
+  color:var(--color-headings);
+}
+
+h2 {
+  color: var(--color-text);
+  font-size: 2em;
+}
+
+h3  {
+  color: var(--color-text);
+}
+
+p {
+  color: var(--color-text);
+}
+
+
+
+
+
+
+/*********************/
+/* ELEMENTS */
+/*********************/
+header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:  rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+header h1{
+  font-size: 3em;
+}
+
+header h2{
+  font-size: 1.7em;
+}
+
+img {
+  max-width:100%;
+}
+
+button{
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--color-text);
+  background-color: transparent;
+  border-style: none;
+}
+
+header button{
+  color: var(--color-title);
+}
+
+header button h2{
+  color: var(--color-title);
+}
+
+header button img{
+  width: 50%;
+  margin-top: 10em;
+  
+}
+
+.audio{
+  background-color: brown;
+  color: black;
+  font-weight: 900;
+  font-size: 1.5em;
+
+  opacity: 100%;
+  border-radius: 10%;
+
+  float: right;
+  margin-right: 2em;
+  padding: .5em;
+}
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+.grid-container{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+
+
+
+/*********************/
+/* Section 1 */
+/*********************/
+section:first-of-type{
+  background-image: url(/images/wapenkast.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  border: 15px solid rgb(58, 58, 58);
+  
+  height: 80vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 3vh;
+  justify-items: center;
+  align-items: center;
+  margin: 8em 15em 0em 5em;
+}
+
+section:first-of-type img{
+  width: 15em;
+  bottom: -20vh;
+}
+
+section:first-of-type button{
+  position: relative;
+  transition: 0,5s;
+  width: 80%;
+}
+
+section:first-of-type button:nth-of-type(-n + 2){
+  align-self: end;
+}
+
+section:first-of-type button:nth-of-type(n + 5){
+  align-self: start;
+}
+
+section:first-of-type button:hover {
+	filter:
+		drop-shadow(0 0 .25em rgb(255, 255, 255))
+		drop-shadow(0 0 .5em rgb(255, 255, 255));
+	
+	cursor:pointer;
+  scale: 1.5;
+}
+
+section:first-of-type button:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 .25em dodgerblue;
+}
+
+
+
+
+
+
+/*********************/
+/* Section 2 */
+/*********************/
+section:nth-of-type(2){
+  background-image: url(/images/start-screen.png);
+  opacity: .89;
+  width: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section:nth-of-type(2).informationBackground{
+  background-image: url(/images/Text-frame-futuristic.png);
+}
+
+section:nth-of-type(2) img{
+  width: 15em;
+}
+
+
+
+/* Opsomming 1 'can be seen in'  */
+
+section:nth-of-type(2) ul:nth-of-type(1){
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  color: var(--color-text);
+}
+
+
+section:nth-of-type(2) ul:nth-of-type(1) button{
+  border: 2px solid lime;
+  padding: 1em;
+  text-align: center;
+  margin-right: 1em;
+  border-radius: 5%;
+}
+
+section:nth-of-type(2) ul:nth-of-type(1) button:hover{
+  color: black;
+  background-color: lime;
+
+  transition: .2s;
+}
+
+section:nth-of-type(2) ul:nth-of-type(1) button:active{
+  background-color: white;
+  border-color: white;
+}
+
+/* Opsomming 2 'death rate'  */
+
+section:nth-of-type(2) ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: flex-start;
+  
+  list-style: none;
+  padding: 0;
+  border: none;
+}
+
+section:nth-of-type(2) button:last-of-type{
+  place-self: end;
+}
+
+
+
+
+/********************/
+/* IMAGES */
+/********************/
+.popup{
+  font-family: 'Courier New', Courier, monospace;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 12em 6em 0em 6em;
+}
+
+.hide{
+  display: none;
+}
+
+.popup img:first-of-type{
+  scale: 2em;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
