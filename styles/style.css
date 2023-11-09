@@ -9,7 +9,7 @@
 body {
   height: 100vh;
   margin:0;
-  background-image: url('/images/achtergrond-ii.png');
+  background-image: url('../images/achtergrond-ii.png');
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -139,7 +139,7 @@ header button img{
 /* Section 1 */
 /*********************/
 section:first-of-type{
-  background-image: url(/images/wapenkast.png);
+  background-image: url(../images/wapenkast.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -196,7 +196,7 @@ section:first-of-type button:focus-visible {
 /* Section 2 */
 /*********************/
 section:nth-of-type(2){
-  background-image: url(/images/start-screen.png);
+  background-image: url(../images/start-screen.png);
   opacity: .89;
   width: 100%;
   background-size: 100%;
@@ -205,7 +205,7 @@ section:nth-of-type(2){
 }
 
 section:nth-of-type(2).informationBackground{
-  background-image: url(/images/Text-frame-futuristic.png);
+  background-image: url(../images/Text-frame-futuristic.png);
 }
 
 section:nth-of-type(2) img{
